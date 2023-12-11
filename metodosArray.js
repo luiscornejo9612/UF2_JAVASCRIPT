@@ -11,7 +11,6 @@ function metodosArray() {
             
         }
     }
-
     if (contador === miArray.length) {
         // Utilizar el contenedor directamente, sin crear un nuevo párrafo
         contenedorid.innerHTML = "<p>" + "Todos los colores son menores a marro" + "</p>";
@@ -19,7 +18,6 @@ function metodosArray() {
         // Utilizar el contenedor directamente, sin crear un nuevo párrafo
         contenedorid.innerHTML += "<p>" + "No todos los colores son menores a marro" + "</p>";
     }
-
     // Obtener los últimos 2 elementos del array
     let ultimosDosColores = miArray.slice(-2);
 
@@ -33,4 +31,5 @@ function metodosArray() {
     miArray.splice(indiceColor, 1);
     contenedorid.innerHTML += `<p>Se ha eliminado el color verd. Nuevo array: [${miArray.join(', ')}]</p>`;
 }
+
 
